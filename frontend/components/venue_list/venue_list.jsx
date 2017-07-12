@@ -6,16 +6,21 @@ class VenueList extends React.Component {
     const { venues, receiveVenue } = this.props;
 
     const venue = venues.map(venue => (
-      <span>
+      <span
+        key={`venue.id`}>
         <p className="venue-name">{venue.name}</p>
 
-        venue.menu_url : <p className="menu-url">{venue.menu_url}</p> ? <p className="menu-url">Menu Website Not Available</p>
+        <p className="menu-url">
+          { venue.menu_url ? venue.menu_url  : "Menu Website Not Available" }
+        </p>
       </span>
     ));
 
-    return {
-
-    }
+    return (
+      <span>
+        { venue }
+      </span>
+    )
   }
 };
 
