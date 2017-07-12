@@ -1,9 +1,9 @@
-# Lunch Roulette
+=Lunch Roulette
 
 A workday doesn't go by were a coworker asks "What's for lunch?" Every day, we find ourselves trying to decide where to eat. I thought it would be fun to create a simple application that utilizes the Foursquare API to return a random suggestion. For now, the app is only good for suggesting places near the Pandora HQ in Oakland.
 
 
-## Built With
+==Built With
 * Rails (v 4.2.8)
 * Foursquare API (used [Foursquare2 gem](https://github.com/mattmueller/foursquare2))
 * React
