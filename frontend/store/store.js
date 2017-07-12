@@ -1,10 +1,13 @@
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import RootReducer from '../reducers/root_reducer';
 import venuesReducer from '../reducers/venues_reducer';
+import thunkMiddleware from '../middleware/thunk_middleware';
 
-const configureStore = () => {
+const configureStore = (preloadedState = {}) => {
   return createStore(
-    RootReducer
+    RootReducer,
+    preloadedState,
+    applyMiddleware(thunkMiddleware)
   );
 };
 

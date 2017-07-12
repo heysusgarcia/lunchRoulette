@@ -8,7 +8,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  fetchVenue: () => dispatch(fetchVenue(venue))
+  fetchVenue: (venue) => dispatch(fetchVenue(venue))
 });
 
 const VenueListContainer = connect(
