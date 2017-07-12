@@ -1,9 +1,10 @@
 import { createStore } from 'redux';
+import RootReducer from '../reducers/root_reducer';
 import venuesReducer from '../reducers/venues_reducer';
 
 const configureStore = () => {
   return createStore(
-    venuesReducer
+    RootReducer
   );
 };
 
