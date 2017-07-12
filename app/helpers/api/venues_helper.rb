@@ -15,7 +15,7 @@ module Api::VenuesHelper
     end
 
     # venue data formatted in a way that the controller would typically return data
-    [{ name: name, menu_url: menu_url }]
+    [{ id: 1, name: name, menu_url: menu_url }]
 
   end
 end
