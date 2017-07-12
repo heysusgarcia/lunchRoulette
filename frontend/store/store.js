@@ -1,10 +1,9 @@
 import { createStore } from 'redux';
 import venuesReducer from '../reducers/venues_reducer';
 
-const configureStore = (preloadedState = {}) => {
+const configureStore = () => {
   return createStore(
-    venuesReducer,
-    preloadedState
+    venuesReducer
   );
 };
 
