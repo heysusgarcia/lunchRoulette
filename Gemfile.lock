@@ -180,6 +180,7 @@ DEPENDENCIES
   foursquare2
   jbuilder (~> 2.0)
   jquery-rails
+  json
   pg (~> 0.20)
   pry-rails
   rails (= 4.2.8)
