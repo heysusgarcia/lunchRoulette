@@ -6,6 +6,6 @@ class ApplicationController < ActionController::Base
   private
 
     def foursquare
-      @foursquare ||= Foursquare2::Client.new(:client_id => ENV['FOURSQUARE_CLIENT_ID'], :client_secret => ENV['FOURSQUARE_CLIENT_SECRET'])
+      @foursquare ||= Foursquare2::Client.new(:client_id => ENV['FOURSQUARE_CLIENT_ID'], :client_secret => ENV['FOURSQUARE_CLIENT_SECRET'], :api_version => '20170505', :m => 'foursquare')
     end
 end
