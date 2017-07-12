@@ -11,11 +11,7 @@ class VenueList extends React.Component {
   toggleVenueView(e) {
     e.preventDefault();
     this.setState({ venueView: !this.state.venueView });
-    this.props.receiveVenue({
-      id: 1,
-      name: 'Suya',
-      menu_url: ""
-    });
+    this.props.fetchVenue();
   }
 
   render() {
