@@ -8,3 +8,4 @@ A workday doesn't go by were a coworker asks "What's for lunch?" Every day, we f
 * Foursquare API (used Foursquare2gem[https://github.com/mattmueller/foursquare2])
 * React
 * Redux
+* react-fontawesome[https://github.com/danawoodman/react-fontawesome]
