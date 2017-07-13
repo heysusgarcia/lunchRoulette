@@ -7,17 +7,17 @@ const configureStore = (preloadedState = {}) => {
   return createStore(
     RootReducer,
     preloadedState,
-    // applyMiddleware(thunkMiddleware)
-    applyMiddleware(thunkMiddleware, addLoggingToDispatch)
+    applyMiddleware(thunkMiddleware)
+    // applyMiddleware(thunkMiddleware, addLoggingToDispatch)
   );
 };
 
-const addLoggingToDispatch = store => next => action => {
-  console.log(store.getState());
-  console.log(action);
-  next(action);
-  console.log(store.getState());
-}
+// const addLoggingToDispatch = store => next => action => {
+//   console.log(store.getState());
+//   console.log(action);
+//   next(action);
+//   console.log(store.getState());
+// }
 
 
 

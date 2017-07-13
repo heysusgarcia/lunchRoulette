@@ -15,7 +15,7 @@ class VenueList extends React.Component {
         </p>
 
         <p className="menu-url">
-          { venue.menu_url ? <a href={venue.menu_url} target="_blank">Menu</a>  : "Menu Not Available" }
+          { venue.menu_url ? <a href={venue.menu_url} target="_blank">Menu</a>  : "" }
         </p>
       </span>
     ));
@@ -34,7 +34,7 @@ class VenueList extends React.Component {
           </button>
         </span>
         { venue }
-      </span>
+    </span>
     )
   }
 };
