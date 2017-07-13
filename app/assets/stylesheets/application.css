@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+   font-family: 'Patrick Hand SC', cursive;
+   font-size: 28px;
+ }
