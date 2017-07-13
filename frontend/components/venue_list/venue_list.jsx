@@ -7,17 +7,18 @@ class VenueList extends React.Component {
 
     const venue = venues.map(venue => (
       <span
-        key={`venue.id`}>
+        key={`venue.id`}
+        className="venue-details">
         <p className="venue-name">{venue.name}</p>
 
         <p className="menu-url">
-          { venue.menu_url ? venue.menu_url  : "Menu Website Not Available" }
+          { venue.menu_url ? <a href={venue.menu_url} target="_blank">Menu</a>  : "Menu Not Available" }
         </p>
       </span>
     ));
 
     return (
-      <span>
+      <span className="venue-parent-view">
         <span>
           <button onClick={fetchVenue}>What's for Lunch?</button>
         </span>
