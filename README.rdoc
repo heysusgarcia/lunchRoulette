@@ -5,6 +5,6 @@ A workday doesn't go by were a coworker asks "What's for lunch?" Every day, we f
 
 ==Built With
 * Rails (v 4.2.8)
-* Foursquare API (used [Foursquare2 gem](https://github.com/mattmueller/foursquare2))
+* Foursquare API (used Foursquare2gem[https://github.com/mattmueller/foursquare2])
 * React
 * Redux
