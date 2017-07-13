@@ -30,7 +30,7 @@ class VenueList extends React.Component {
               size='2x' />
           </div>
           <button onClick={fetchVenue}>
-            I'm Feeling Hungry
+            I'm Feeling Hungry!
           </button>
         </span>
         { venue }
