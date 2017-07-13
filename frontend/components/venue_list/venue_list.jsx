@@ -4,19 +4,19 @@ import ReactDOM from 'react-dom';
 class VenueList extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { venueView: false }
-    this.toggleVenueView = this.toggleVenueView.bind(this);
+    // this.state = { venueView: false }
+    // this.toggleVenueView = this.toggleVenueView.bind(this);
   }
 
-  toggleVenueView(e) {
-    e.preventDefault();
-    this.setState({ venueView: !this.state.venueView });
-    this.props.fetchVenue();
-  }
+  // toggleVenueView(e) {
+  //   e.preventDefault();
+  //   this.setState({ venueView: !this.state.venueView });
+  //   this.props.fetchVenue();
+  // }
 
   render() {
-    const { venues, receiveVenue } = this.props;
-    let venueView;
+    const { venues, fetchVenue } = this.props;
+    // let venueView;
 
     const venue = venues.map(venue => (
       <span
@@ -29,17 +29,16 @@ class VenueList extends React.Component {
       </span>
     ));
 
-
-    if (this.state.venueView) {
-      venueView = venue;
-    } else {
-      venueView = <p className="venueless-view">Click The Button To Find Out What's For Lunch!</p>
-    }
+    // if (this.state.venueView) {
+    //   venueView = venue;
+    // } else {
+    //   venueView = <p className="venueless-view">Click The Button To Find Out What's For Lunch!</p>
+    // }
 
     return (
       <span>
-        { venueView }
-        <button onClick={this.toggleVenueView}>What's for Lunch?</button>
+        { venue }
+        <button onClick={fetchVenue}>What's for Lunch?</button>
       </span>
     )
   }
