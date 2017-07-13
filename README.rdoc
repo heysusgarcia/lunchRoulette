@@ -1,6 +1,6 @@
 =Lunch Roulette
 
-A workday doesn't go by were a coworker asks "What's for lunch?" Every day, we find ourselves trying to decide where to eat. I thought it would be fun to create a simple application that utilizes the Foursquare API to return a random suggestion. For now, the app is only good for suggesting places near the Pandora HQ in Oakland.
+A workday doesn't go by were a coworker doesn't ask "What's for lunch?" Every day, we find ourselves trying to decide where to eat. I thought it would be fun to create a simple application that utilizes the Foursquare API to return a random suggestion. For now, the app is only good for suggesting places near the Pandora HQ in Oakland.
 
 
 ==Built With
